@@ -28,6 +28,7 @@ Module Client
         Dim session As New SoapSession
         session.HttpSystemData.Host = host
         session.HttpSystemData.Port = port
+        session.HttpSystemData.Protocol = 'http'    
         Return session
     End Function
 
